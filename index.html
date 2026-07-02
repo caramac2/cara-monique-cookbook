@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cara & Monique Cookbook</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#6b8f71">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">v0.2.0 · Cookbook MVP</p>
+      <h1>🥘 Cara & Monique Cookbook</h1>
+      <p>Pick meals for the week, track plant diversity, and generate a shopping list.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel summaryPanel">
+      <h2>This week</h2>
+      <div id="weeklySummary" class="weeklySummary"></div>
+      <div id="weeklyPlantScore" class="plantScore empty"></div>
+      <div id="selectedRecipes" class="selectedRecipes">No recipes selected yet.</div>
+      <div class="actions">
+        <button id="shoppingBtn">Generate shopping list</button>
+        <button id="clearWeekBtn" class="secondary">Clear week</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="sectionHeader">
+        <h2>Recipes</h2>
+        <input id="search" type="search" placeholder="Search recipes, tags, ingredients...">
+      </div>
+      <div id="recipes" class="recipeGrid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Shopping list</h2>
+      <p class="hint">Generated from your selected meals. Tick items off while shopping — ticks are saved on this device.</p>
+      <div id="shoppingList" class="shoppingList">Choose recipes, then generate a shopping list.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

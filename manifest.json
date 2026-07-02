@@ -1,0 +1,11 @@
+{
+  "name": "Cara & Monique's Cookbook",
+  "short_name": "Cookbook",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff8f2",
+  "theme_color": "#e36b2c",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

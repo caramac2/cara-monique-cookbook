@@ -1,0 +1,26 @@
+:root{
+  --bg:#f7f4ee;
+  --card:#fffdf8;
+  --ink:#253026;
+  --muted:#687467;
+  --accent:#6b8f71;
+  --accent2:#dfeadf;
+  --line:#e4ded2;
+  --warn:#b7791f;
+  --good:#2f7d4a;
+  --shadow:0 10px 30px rgba(37,48,38,.08);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+.hero{background:linear-gradient(135deg,#e9f2e8,#fff6df);padding:28px 18px;border-bottom:1px solid var(--line)}
+.hero div,main{max-width:1100px;margin:0 auto}
+h1{margin:.1rem 0 .4rem;font-size:clamp(2rem,5vw,3.5rem)}
+h2{margin:0 0 14px}.eyebrow{margin:0;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}.hero p:last-child{margin:.2rem 0 0;color:var(--muted)}
+main{padding:18px;display:grid;gap:18px}.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}
+.sectionHeader{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}input[type=search]{width:min(420px,100%);font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.recipeGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:16px}.recipe{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;display:flex;flex-direction:column}.photo{height:160px;background:linear-gradient(135deg,#dfeadf,#f6e3c1);display:flex;align-items:center;justify-content:center;text-align:center;color:#4f624f;padding:18px;font-weight:700}.recipeBody{padding:15px;display:flex;flex-direction:column;gap:12px;flex:1}.recipe h3{margin:0;font-size:1.25rem}.meta,.tags,.plantList{display:flex;gap:7px;flex-wrap:wrap}.pill{display:inline-flex;align-items:center;border-radius:999px;background:var(--accent2);padding:5px 9px;font-size:.86rem;color:#29402e}.pill.warn{background:#fff2d8;color:var(--warn)}.pill.good{background:#e1f4e7;color:var(--good)}
+button{border:0;border-radius:12px;background:var(--accent);color:white;font-weight:700;padding:11px 14px;font:inherit;cursor:pointer}button.secondary{background:#efe9dc;color:var(--ink)}button:hover{filter:brightness(.96)}.buttonRow,.actions{display:flex;gap:10px;flex-wrap:wrap}.full{width:100%}
+details{border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer;font-weight:700}.nutrition{background:#f6f1e7;border-radius:16px;padding:12px}.nutrition p{margin:3px 0}.small{font-size:.92rem;color:var(--muted)}
+.weeklySummary{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:12px}.summaryCard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px}.summaryCard strong{display:block;font-size:1.1rem}.summaryCard.ok{border-color:#b8dfc4;background:#f0fbf3}.summaryCard.warn{border-color:#f0d29c;background:#fff9ee}.plantScore{border:1px solid var(--line);border-radius:16px;padding:12px;background:#fff;margin-bottom:12px}.plantScore.complete{border-color:#b8dfc4;background:#f0fbf3}.plantScore.empty{color:var(--muted)}.scoreTop{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:8px}.progress{height:12px;background:#eee6d8;border-radius:999px;overflow:hidden}.progress div{height:100%;background:var(--accent);border-radius:999px;transition:width .25s}.selectedRecipes{color:var(--muted)}
+.shoppingList{white-space:normal}.shoppingGroup{margin:12px 0}.shoppingGroup h3{margin:0 0 8px}.shopItem{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px solid #f0eadf}.shopItem input{margin-top:4px}.shopItem.done span{text-decoration:line-through;color:var(--muted)}.hint{color:var(--muted);margin-top:-6px}.emptyState{color:var(--muted);padding:12px;background:#fff;border:1px dashed var(--line);border-radius:14px}
+@media(max-width:600px){.hero{padding:22px 14px}main{padding:12px}.panel{padding:14px;border-radius:18px}.recipeGrid{grid-template-columns:1fr}.photo{height:135px}.scoreTop{align-items:flex-start;flex-direction:column}.weeklySummary{grid-template-columns:1fr 1fr}}
